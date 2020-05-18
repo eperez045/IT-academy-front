@@ -54,11 +54,11 @@ nav{
     border-bottom: 1px solid black;
 }
 .nav-brand{
-    width: 8rem;
+    width: 20rem;
 }
 .menu-icons i{
     font-size: 3.5rem;
-    color: #fafafa;
+    color: black;
     cursor: pointer;
 }
 .close i{
@@ -97,17 +97,19 @@ nav{
 .hero{
     width: 100%;
     height: 80vh;
-    background-image: url(images/14893.jpg);
+    background: linear-gradient(0deg, rgba(190,87,28,0.6) 0%, rgba(253,233,45,0.7) 100%), 
+    url(images/14893.jpg), center;
+    /* background-image: url(images/14893.jpg); */
     /* background-repeat: no-repeat; */
-    background-position: center;
-    background-size: 30%;
+    /* background-position: center; */
+    background-size: 20%;
     position: relative;
 }
 .hero::before{
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -3px;
     width: 100%;
     height: 4.7rem;
     background: url(images/wave-small.png) center no-repeat;
@@ -120,18 +122,19 @@ nav{
     background-color: #fafafa;
     padding: 1.4rem;
     border-radius: 10%;
+    border: 3px solid black;
 }
 .main-message h3{
     font-size: 1.6rem;
 }
 .main-message h1{
     font-family: 'Aldrich', sans-serif;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
 }
-.main-message p{
+/* .main-message p{
     text-transform: lowercase;
-}
+} */
 .btn{
     background-color: #eb648c;
     border-radius: 2rem;
@@ -141,7 +144,6 @@ nav{
     padding: 1rem 2.5rem;
     text-transform: uppercase;
     transition: background-color 650ms;
-    position: relative;
 }
 .btn:hover{
     background-color: #ce587b;
@@ -158,7 +160,7 @@ nav{
 .title-heading h3{
     font-size: 1.4rem;
 }
-.title-heading h1{
+.title-heading h2{
     font-family: 'Aldrich', sans-serif;
     font-size: 2rem;
     margin: .5rem 0 1rem;
@@ -194,7 +196,7 @@ nav{
 .activities-grid-item i{
     font-size: 4rem;
 }
-.activities-grid-item h1{
+.activities-grid-item h2{
     font-family: 'Aldrich', sans-serif;
     font-size: 1.7rem;
     text-transform: uppercase;
@@ -204,13 +206,15 @@ nav{
 .testimonials{
     width: 100%;
     height: 80vh;
-    background-color:rgb(181, 198, 214);
+    background: linear-gradient(0deg, rgba(190,87,28,0.6) 0%, rgba(253,233,45,0.7) 100%), 
+    url(images/14893.jpg), center;
+    background-size: 20%;
     position: relative;
 }
 .testimonials::before{
     content: "";
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
     width: 100%;
     height: 4.7rem;
@@ -220,19 +224,19 @@ nav{
 .testimonial{
     width: 100%;
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 .testimonial-text-box{
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     margin-bottom: 2rem;
     position: relative;
 }
 .testimonial-text-box i{
     position: absolute;
-    top: -8rem;
+    top: -4rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 8rem;
@@ -261,4 +265,84 @@ footer{
     background-color: #d7d4ed;
     text-align: center;
     color: rgba(0,0,0,.7);
+}
+/* Media queries */
+
+@media screen and (min-width: 470px){
+    .hero::before{
+        height: 9.4rem;
+        background: url(images/wave-medium.png);
+        background-size: cover;
+    }
+    .testimonials::before{
+        height: 9.4rem;
+        background: url(images/wave-medium-reversed.png);
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 700px){
+    header{
+        height: 8rem;
+    }
+    .nav-brand{
+        width: 26rem;
+    }
+    .nav-list{
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+    .menu-icons{
+        display: none;
+    }
+    .nav-item{
+        margin: 0 2.5em;
+    }
+    .nav-link{
+        position: relative;
+        font-size: 1.3rem;
+    }
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2rem;
+        background-color: #eb648c;
+        width: 100%;
+        height: 3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+    .nav-link:hover::before{
+        transform: scaleX(1);
+    }
+    .hero{
+        height: 70vh;
+    }
+    .main-message{
+        transform: translateY(20%);
+    }
+}
+@media screen and (min-width: 950px){
+    .hero::before{
+        height: 22.7rem;
+        background: url(images/wave-large.png);
+        background-size: cover;
+    }
+    .testimonials::before{
+        height: 22.7rem;
+        background: url(images/wave-large-reversed.png);
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 1200px){
+    .hero{
+        height: 85vh;
+    }
 }
