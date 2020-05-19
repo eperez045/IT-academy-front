@@ -95,6 +95,7 @@ nav{
     color: rgba(0,0,0);
 }
 .hero{
+    margin: 0;
     width: 100%;
     height: 85vh;
     background: url(images/pattern\ \(3\).png), center;
@@ -204,7 +205,7 @@ nav{
 }
 .activities-grid-item:hover{
     background: linear-gradient(0deg, rgba(235, 85, 160, 0.6) 0%, rgba(253,233,45,0.7) 100%), 
-    url(images/pattern.png), center;
+    url(images/pattern\ \(3\).png), center;
     background-size: cover;
     border-radius: 10%;
 }
@@ -239,12 +240,14 @@ nav{
     border-radius: 10%;
     border: 3px solid black;
     padding: 1.5rem;
+    
 }
 .testimonial-text-box{
     padding: 0 2rem;
     margin-bottom: 2rem;
     position: relative;
     font-size: 1.9rem;
+    margin-top: 2rem;
 }
 .testimonial-text-box i{
     position: absolute;
