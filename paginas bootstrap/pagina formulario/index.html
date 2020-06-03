@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/two-dog-pawprints.svg" type="image/x-icon">
-    <title>Contacto</title>
+    <title>PaseaGos/Formulario</title>
   </head>
   <body>
      <!-- NavBar -->
@@ -65,40 +65,46 @@
           </div>
       </div>
     </nav>
-<!-- Contact Form -->
+<!-- Form -->
 <section>
 <div class="container d-flex align-items-center justify-content-center">
-  <div class="box m-1 d-flex align-items-center justify-content-center">
+  <div class="box mb-4 d-flex align-items-center justify-content-center">
     <div class="card w-75 rounded">
       <div class="card-body">
         <h2 class="text-center p-1">¡Registrate como cuidador!</h2>
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword">
               <small id="passwordHelpInline" class="text-muted">
-                Must be 8-20 characters long.
+                Debe tener mas de 6 caracteres.
               </small>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputName">Nombre</label>
-              <input type="text" class="form-control" id="inputEmail4">
+              <input type="text" class="form-control" id="inputName">
             </div>
             <div class="form-group col-md-6">
               <label for="inputSurname">Apellidos</label>
-              <input type="text" class="form-control" id="inputPassword4">
+              <input type="text" class="form-control" id="inputSurname">
             </div>
           </div>
-          <div class="form-group">
-            <label for="inputAddress">Dirección</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <div class="form-row">
+            <div class="form-group col-md-10">
+              <label for="inputAddress">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputTlf">Telefono</label>
+              <input type="text" class="form-control" id="inputTlf">
+            </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -117,22 +123,22 @@
               <input type="text" class="form-control" id="inputZip">
             </div>
           </div>
-          <label for="inputZip">Quiero ofrecer mis servicios como:</label>
+          <label for="inputServices">Quiero ofrecer mis servicios como:</label>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1"><img src="images/006-correa.svg" alt="" width="35rem" height="35rem class="sm-icons"> Paseador</label>
+            <input class="form-check-input" type="checkbox" id="inlinePaseador" value="option1">
+            <label class="form-check-label" for="inlinePaseador"><img src="images/006-correa.svg" alt="" width="35rem" height="35rem class="sm-icons"> Paseador</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2"><img src="images/009-casa.svg" alt="" width="35rem" height="35rem class="sm-icons"> Guarderia</label>
+            <input class="form-check-input" type="checkbox" id="inlineGuarderia" value="option2">
+            <label class="form-check-label" for="inlineGuarderia"><img src="images/009-casa.svg" alt="" width="35rem" height="35rem class="sm-icons"> Guarderia</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-            <label class="form-check-label" for="inlineCheckbox3"><img src="images/005-premio.svg" alt="" width="35rem" height="35rem class="sm-icons"> Educador</label>
+            <input class="form-check-input" type="checkbox" id="inlineEducador" value="option3">
+            <label class="form-check-label" for="inlineEducador"><img src="images/005-premio.svg" alt="" width="35rem" height="35rem class="sm-icons"> Educador</label>
           </div>
           <div class="form-group">
-            <label for="exampleFormControlFile1">Sube una foto para tu perfil</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <label for="inputFotoPerfil">Sube una foto para tu perfil</label>
+            <input type="file" class="form-control-file" id="inputFotoPerfil">
           </div>
           <div class="form-group text-center">
             <button type="submit" class="btn btn-light">Enviar</button>
