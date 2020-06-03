@@ -1,0 +1,9 @@
+.mapa{
+    background-image: url(images/Mapa-turistico-de-Barcelona.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.busqueda{
+    background-image: url(images/pattern\ \(3\).png);
+    background-size: cover;
+}

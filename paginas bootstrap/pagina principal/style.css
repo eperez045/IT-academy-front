@@ -1,0 +1,11 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-color: lightsalmon;
+}
+.services{
+    background-image: url(images/pattern\ \(4\).png);
+    background-size: 30%;
+    padding: 2rem;
+}

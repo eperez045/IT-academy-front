@@ -1,0 +1,28 @@
+
+.box{
+    background: rgb(255,211,141);
+    background: radial-gradient(circle, rgba(255,211,141,1) 0%, rgba(255,206,244,1) 100%);
+    width: 30rem;
+    height: 25rem;
+    border-radius: 14% 83% 67% 36% / 5% 62% 43% 93%
+}
+.box2{
+    background: rgb(255,211,141);
+    background: radial-gradient(circle, rgba(255,211,141,1) 0%, rgba(255,206,244,1) 100%);
+    width: 30rem;
+    height: 25rem;
+    border-radius: 84% 17% 67% 36% / 84% 62% 43% 16%
+}
+.imagen{
+    width: 10rem;
+    height: 10rem;
+}
+.footer-up{
+    background-color: rgb(241, 197, 179);
+}
+.icono{
+    width: 5rem;
+}
+.footer-down{
+    background-color: lightsalmon;
+}
