@@ -10,183 +10,188 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome -->
-    <!-- JavaScript efects -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>PaseaGos/ Home</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="images/PaseaGos-removebg-preview.png" type="image/x-icon">
+    <title>PaseaGos/Busqueda</title>
   </head>
   <body>
-      <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d4d4aa">
-            <div class="container">
-                <a class="navbar-brand" href="#header">
-                    <img src="images/PaseaGos-removebg-preview.png" width="50" height="50" alt="" loading="lazy" >
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Busqueda</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Registro</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link active" >Iniciar Sesion</a>
-                    </li> -->
-                    <div class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Iniciar Sesion
-                        </a>
-                        <form class="dropdown-menu p-4">
-                            <div class="form-group">
-                              <label for="exampleDropdownFormEmail2">Email address</label>
-                              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleDropdownFormPassword2">Password</label>
-                              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                              <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                                <label class="form-check-label" for="dropdownCheck2">
-                                  Remember me
-                                </label>
-                              </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                          </form>
-                    </div>
-                  </ul>
-                </div>
-            </div>
-          </nav>
-      <section>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col busqueda">
-              <div class="card">
-                <form class="p-3">
-                  <div class="form-group row ">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail3">
-                    </div>
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-3 mb-5 bg-white">
+  <div class="container">
+      <a class="navbar-brand" href="#header">
+          <img src="images/PaseaGos-removebg-preview.png" width="50" height="50" alt="" loading="lazy" >
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Busqueda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registro</a>
+          </li>
+          <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Iniciar Sesion
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Direccion email</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
                   </div>
-                  <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                    <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword3">
-                    </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
                   </div>
-                  <fieldset class="form-group">
-                    <div class="row">
-                      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                      <div class="col-sm-10">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                          <label class="form-check-label" for="gridRadios1">
-                            First radio
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                          <label class="form-check-label" for="gridRadios2">
-                            Second radio
-                          </label>
-                        </div>
-                        <div class="form-check disabled">
-                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                          <label class="form-check-label" for="gridRadios3">
-                            Third disabled radio
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <div class="form-group row">
-                    <div class="col-sm-2">Checkbox</div>
-                    <div class="col-sm-10">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck1">
-                          Example checkbox
-                        </label>
-                      </div>
-                    </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                    <label class="form-check-label" for="dropdownCheck">
+                      Recuerdame
+                    </label>
                   </div>
-                  <div class="form-group row">
-                    <div class="col-sm-10">
-                      <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                  </div>
+                  <button type="submit" class="btn btn-light">Entrar</button>
                 </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Eres nuevo? Registrate</a>
+                <a class="dropdown-item" href="#">Contraseña olvidada?</a>
               </div>
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="images/AdobeStock_170844396-z.jpg" class="card-img rounded-circle" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+          </div>
+        </ul>
+      </div>
+  </div>
+</nav>
+<!-- seccion busqueda -->
+<section class="buscador">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- filtro busqueda -->
+        <div class="card">
+          <div class="card-header text-center">
+            <h5>¿Que necesitas?</h5>
+          </div>
+          <div class="card-body text-center">
+            <label for="inputServices" class="h6">Necesito:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlinePaseador" value="option1">
+            <label class="form-check-label" for="inlinePaseador"><img src="images/006-correa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Paseador</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineGuarderia" value="option2">
+            <label class="form-check-label" for="inlineGuarderia"><img src="images/009-casa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Guarderia</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineEducador" value="option3">
+            <label class="form-check-label" for="inlineEducador"><img src="images/005-premio.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Educador</label>
+          </div>
+          <div class="form-group text-center mt-4">
+            <button type="submit" class="btn btn-light">¡Busca!</button>
+          </div>
+          </div>
+        </div>
+        <!-- Tarjetas usuarios -->
+        <div class="box">
+          <div class="card mt-3 mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4 text-center">
+                <img src="images/perfil-resilencia.jpg" class="foto card-img rounded-circle" alt="..."><br>
+                <button class="btn btn-light">Contacta</button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Antonia Lopez</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <img src="images/006-correa.svg" alt="" class="icon-sm" width="35rem" height="35rem">
+                  <img src="images/009-casa.svg" alt="" class="icon-sm" width="35rem" height="35rem">
                 </div>
               </div>
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="images/unnamed (1).jpg" class="card-img rounded-circle" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="images/como_hacer_famoso_a_mi_perro_en_instagram_21095_600.jpg" class="card-img rounded-circle" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col mapa border border-dark">
             </div>
           </div>
-
+          <div class="card mt-3 mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4 text-center">
+                <img src="images/señor.jpg" class="foto card-img rounded-circle" alt="..."><br>
+                <button class="btn btn-light">Contacta</button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Juan Pardo</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <img src="images/006-correa.svg" alt="" class="icon-sm" width="35rem" height="35rem">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3 mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4 text-center">
+                <img src="images/6f9373ba6c28c40beeb6a571309ad1b4.jpg" class="foto card-img rounded-circle" alt="..."><br>
+                <button class="btn btn-light">Contacta</button>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Catalina Martinez</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <img src="images/006-correa.svg" alt="" class="icon-sm" width="35rem" height="35rem">
+                  <img src="images/009-casa.svg" alt="" class="icon-sm" width="35rem" height="35rem">
+                  <img src="images/005-premio.svg" alt="" class="icon-sm" width="35rem" height="35rem">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-      <footer>
-        Cosas de
-      </footer>
+      </div>
+      <!-- Maps -->
+      <div class="col-md-6">
+        <div id="map-container" class="map container-fluid">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11971.149382180258!2d2.169649572504732!3d41.40042436382415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ddf5a146c5%3A0x1c00fae37a474db0!2s08013%20Barcelona!5e0!3m2!1ses!2ses!4v1591180142917!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-up container-fluid">
+        <div class="row">
+          <div class="col-md-12 py-2">
+            <div class="m-1 d-flex align-items-center justify-content-center">
+              <a class="icono" href="#">
+                <img src="images/facebook.svg" alt="" width="35rem" height="35rem">
+              </a>
+              <a class="icono" href="#">
+                <img src="images/gorjeo.svg" alt="" width="35rem" height="35rem">
+              </a>
+              <a class="icono" href="#">
+                <img src="images/linkedin.svg" alt="" width="35rem" height="35rem">
+              </a>
+              <a class="icono-u" href="#">
+                <img src="images/instagram.svg" alt="" width="35rem" height="35rem">
+              </a>
+            </div>
+          </div>
+        </div>
+      <div class="footer-down container-fluid">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://paseagos.com/"> paseaGos.com</a><br>
+          Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- google Maps -->
+    <script type="text/javascript" ></script>
   </body>
 </html>
