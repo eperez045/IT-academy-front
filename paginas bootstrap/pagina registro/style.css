@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Sanchez', serif;
+}
 .box{
     background: rgb(255,211,141);
     background: radial-gradient(circle, rgba(255,211,141,1) 0%, rgba(255,206,244,1) 100%);

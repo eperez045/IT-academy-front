@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sanchez&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- styles CSS -->
@@ -17,22 +18,22 @@
      <!-- NavBar -->
      <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-3 mb-5 bg-white">
       <div class="container">
-          <a class="navbar-brand" href="#header">
-              <img src="images/PaseaGos-removebg-preview.png" width="50" height="50" alt="" loading="lazy" >
-          </a>
+        <a class="logo navbar-brand" href="../pagina principal/index.html">
+          <img src="images/two-dog-pawprints.svg" width="50" height="50" alt="" loading="lazy" >PaseaGos
+        </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Busqueda</a>
+                <a class="nav-link" href="../pagina busqueda/index.html">Busqueda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="../pagina contacto/index.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Registro</a>
+                <a class="nav-link" href="../pagina registro/index.html">Registro</a>
               </li>
               <div class="dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,7 +58,7 @@
                       <button type="submit" class="btn btn-light">Entrar</button>
                     </form>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Eres nuevo? Registrate</a>
+                    <a class="dropdown-item" href="../pagina registro/index.html">Eres nuevo? Registrate</a>
                     <a class="dropdown-item" href="#">Contraseña olvidada?</a>
                   </div>
               </div>
@@ -71,7 +72,7 @@
   <div class="box mb-4 d-flex align-items-center justify-content-center">
     <div class="card w-75 rounded">
       <div class="card-body">
-        <h2 class="text-center p-1">¡Registrate como cuidador!</h2>
+        <h2 class="text-center p-3" style="font-family: 'Roboto', sans-serif;">¡Registrate como cuidador!</h2>
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -126,15 +127,19 @@
           <label for="inputServices">Quiero ofrecer mis servicios como:</label>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" id="inlinePaseador" value="option1">
-            <label class="form-check-label" for="inlinePaseador"><img src="images/006-correa.svg" alt="" width="35rem" height="35rem class="sm-icons"> Paseador</label>
+            <label class="form-check-label" for="inlinePaseador"><img src="images/006-correa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Paseador</label>
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" id="inlineGuarderia" value="option2">
-            <label class="form-check-label" for="inlineGuarderia"><img src="images/009-casa.svg" alt="" width="35rem" height="35rem class="sm-icons"> Guarderia</label>
+            <label class="form-check-label" for="inlineGuarderia"><img src="images/009-casa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Guarderia</label>
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="checkbox" id="inlineEducador" value="option3">
-            <label class="form-check-label" for="inlineEducador"><img src="images/005-premio.svg" alt="" width="35rem" height="35rem class="sm-icons"> Educador</label>
+            <label class="form-check-label" for="inlineEducador"><img src="images/005-premio.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Educador</label>
+          </div>
+          <div class="form-group">
+            <label for="FormControlTextarea1">¡Cuentanos más sobre ti!</label>
+            <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
           </div>
           <div class="form-group">
             <label for="inputFotoPerfil">Sube una foto para tu perfil</label>

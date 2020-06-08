@@ -5,32 +5,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sanchez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Sanchez&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome -->
     <!-- JavaScript efects -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>PaseaGos/ Home</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/PaseaGos-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/two-dog-pawprints.svg" type="image/x-icon">
   </head>
   <body>
   <!-- NavBar -->
 <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-3 mb-5 bg-white">
   <div class="container">
-      <a class="navbar-brand" href="../pagina principal/index.html">
-          <img src="images/PaseaGos-removebg-preview.png" width="50" height="50" alt="" loading="lazy" >
-      </a>
+    <a class="logo navbar-brand" href="../pagina principal/index.html">
+      <img src="images/two-dog-pawprints.svg" width="50" height="50" alt="" loading="lazy" >PaseaGos
+    </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#buscador">Busqueda</a>
+            <a class="nav-link" href="../pagina busqueda/index.html">Busqueda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../pagina contacto/index.html">Contacto</a>
@@ -72,44 +71,42 @@
     <!-- HEADER -->
     <header id="header" class="header">
         <div class="container-fluid" >
-            <div class="row">
-                <div class="col-md-6 mt-5">
+            <div class="row mb-5">
+                <div class="col-md-6 mt-3">
                     <div class="container">
                         <div class="card shadow p-3 mb-5 bg-white rounded">
-                            <div class="card-header">
-                              Featured
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <select class="custom-select custom-select-lg mb-3">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                              
-                              <select class="custom-select custom-select-sm">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                              <a href="#" class="btn btn-primary mt-2">Go somewhere</a>
-                            </div>
+                          <div class="cabecera card-header text-center">
+                            <h1 class="h3">Encuentra a los mejores profesionales para tu perro</h1>
+                          </div>
+                          <div class="card-body text-center">
+                            <label for="inputServices" class="h6">Necesito:</label><br>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlinePaseador" value="option1">
+                            <label class="form-check-label" for="inlinePaseador"><img src="images/006-correa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Paseador</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineGuarderia" value="option2">
+                            <label class="form-check-label" for="inlineGuarderia"><img src="images/009-casa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Guarderia</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineEducador" value="option3">
+                            <label class="form-check-label" for="inlineEducador"><img src="images/005-premio.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Educador</label>
+                          </div>
+                          <div class="mt-4">
+                              <a href="../pagina busqueda/index.html" class="btn btn-light mt-2"><img src="images/lupa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> ¡Busca!</a>
+                          </div>
                           </div>
                         
                     </div>
+                </div>
                 </div>
                 <div class="col-md-6 mt-3">
                   <div class="box d-flex align-items-center justify-content-center">
                     <img src="images/26661-removebg-preview (1).png" alt="">
                   </div>
-                   
+                </div>
                 </div>
             </div>
-        </div>
-
     </header>
     <!-- Services -->
     <section class="services">
@@ -117,21 +114,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="box-2 m-4 p-5 text-center">
-                      <img src="images/006-correa.svg" alt="" width="50rem" height="50rem">
+                      <img src="images/006-correa.svg" alt="" width="50rem" height="50rem"><a href="../pagina busqueda/index.html" class="stretched-link"></a>
                     <h4>Paseo</h4>
                     <p>No tienes tiempo hoy para sacar a pasear a tu mejor amigo? Busca a los mejores profesionales</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                   <div class="box-2 m-4 p-5 text-center">
-                    <img src="images/009-casa.svg" alt="" width="50rem" height="50rem">
+                    <img src="images/009-casa.svg" alt="" width="50rem" height="50rem"><a href="../pagina busqueda/index.html" class="stretched-link"></a>
                     <h4>Guarderia</h4>
                     <p>¿Necesitas a algien que cuide a tu perrito? Busca los mejores lugares</p>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="box-2 m-4 p-5 text-center">
-                    <img src="images/007-premio-1.svg" alt="" width="50rem" height="50rem">
+                    <img src="images/007-premio-1.svg" alt="" width="50rem" height="50rem"><a href="../pagina busqueda/index.html" class="stretched-link"></a>
                     <h4>Educadores</h4>
                     <p>Los mejores educadores para tu perrito a un solo click</p>
                   </div>
@@ -140,7 +137,7 @@
         </div>
     </section>
     <section class="slider">
-      <div class="container mt-5 mb-5">
+      <div class="container mt-5 mb-5 w-75">
   <!--Grid row-->
   <div class="row text-center">
 
