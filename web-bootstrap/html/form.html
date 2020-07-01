@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sanchez&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- styles CSS -->
+    <link rel="stylesheet" href="../css/style-form.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/two-dog-pawprints.svg" type="image/x-icon">
+    <title>PaseaGos/Formulario</title>
+  </head>
+  <body>
+  <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-3 mb-5 bg-white">
+      <div class="container">
+        <a class="logo navbar-brand" href="../index.html">
+          <img src="../images/two-dog-pawprints.svg" width="50" height="50" alt="" loading="lazy" >PaseaGos
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="busqueda.html">Busqueda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registro</a>
+              </li>
+              <div class="dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Iniciar Sesion
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <form class="px-4 py-3">
+                      <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Direccion email</label>
+                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Recuerdame
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-light">Entrar</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="registro.html">Eres nuevo? Registrate</a>
+                    <a class="dropdown-item" href="#">Contraseña olvidada?</a>
+                  </div>
+              </div>
+            </ul>
+          </div>
+      </div>
+    </nav>
+<!-- Form -->
+<section>
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="box mb-4 d-flex align-items-center justify-content-center">
+    <div class="card w-75 rounded">
+      <div class="card-body">
+        <h2 class="text-center p-3" style="font-family: 'Roboto', sans-serif;">¡Registrate como cuidador!</h2>
+        <form method="POST" action="registrado.html" id="myFormId" onsubmit="return registerValidate()" name="myForm">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email*</label>
+              <input type="email" class="form-control" id="inputEmail">
+              <div class="invalid-feedback" id="errorEmail"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Password*</label>
+              <input type="password" class="form-control" id="inputPassword">
+              <small id="passwordHelpInline" class="text-muted">
+                Debe tener mas de 6 caracteres.
+              </small>
+              <div class="invalid-feedback" id="errorPassword"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Nombre*</label>
+              <input type="text" class="form-control" id="inputName">
+              <div class="invalid-feedback" id="errorName"></div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputSurname">Apellidos</label>
+              <input type="text" class="form-control" id="inputSurname">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-10">
+              <label for="inputAddress">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputTlf">Telefono</label>
+              <input type="text" class="form-control" id="inputTlf">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Ciudad*</label>
+              <input type="text" class="form-control" id="inputCity">
+              <div class="invalid-feedback" id="errorCity"></div>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputProvince">Provincia*</label>
+              <select id="inputProvince" class="form-control">
+                <option selected value=""></option>
+				          <option>Barcelona</option>
+				          <option>Girona</option>
+				          <option>Tarragona</option>
+				          <option>Lleida</option>
+			        </select>
+			      <div class="invalid-feedback" id="errorProvince"></div>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Codigo Postal*</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <label for="inputServices">Quiero ofrecer mis servicios como:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlinePaseador" value="option1">
+            <label class="form-check-label" for="inlinePaseador"><img src="../images/006-correa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Paseador</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineGuarderia" value="option2">
+            <label class="form-check-label" for="inlineGuarderia"><img src="../images/009-casa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Guarderia</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineEducador" value="option3">
+            <label class="form-check-label" for="inlineEducador"><img src="../images/005-premio.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Educador</label>
+          </div>
+          <div class="form-group">
+            <label for="FormControlTextarea1">¡Cuentanos más sobre ti!</label>
+            <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="inputFotoPerfil">Sube una foto para tu perfil</label>
+            <input type="file" class="form-control-file" id="inputFotoPerfil">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            He leido y acepto la politica de privacidad*
+            </label>
+            <div class="invalid-feedback" id="errorCheck"></div>
+          </div>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-light">Enviar</button>
+          </div>
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
+</section>
+    <!-- Footer -->
+<footer>
+  <div class="footer-up container-fluid">
+    <div class="row">
+      <div class="col-md-12 py-2">
+        <div class="m-1 d-flex align-items-center justify-content-center">
+          <a class="icono" href="#">
+            <img src="../images/facebook.svg" alt="" width="35rem" height="35rem">
+          </a>
+          <a class="icono" href="#">
+            <img src="../images/gorjeo.svg" alt="" width="35rem" height="35rem">
+          </a>
+          <a class="icono" href="#">
+            <img src="../images/linkedin.svg" alt="" width="35rem" height="35rem">
+          </a>
+          <a class="icono-u" href="#">
+            <img src="../images/instagram.svg" alt="" width="35rem" height="35rem">
+          </a>
+        </div>
+      </div>
+    </div>
+  <div class="footer-down container-fluid">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://paseagos.com/"> paseaGos.com</a><br>
+      Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+    </div>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <script src="main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

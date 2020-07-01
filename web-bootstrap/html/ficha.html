@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Sanchez&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/style-fic.css">
+    <title>PaseaGos/ Ficha</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/two-dog-pawprints.svg" type="image/x-icon">
+  </head>
+  <body>
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-3 mb-5 bg-white">
+        <div class="container">
+            <a class="logo navbar-brand" href="../index.html">
+                <img src="../images/two-dog-pawprints.svg" width="50" height="50" alt="" loading="lazy" >PaseaGos
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="busqueda.html">Busqueda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Iniciar Sesion
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <form class="px-4 py-3">
+                        <div class="form-group">
+                          <label for="exampleDropdownFormEmail1">Direccion email</label>
+                          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleDropdownFormPassword1">Contraseña</label>
+                          <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Recuerdame
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-light">Entrar</button>
+                      </form>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="registro.html">Eres nuevo? Registrate</a>
+                      <a class="dropdown-item" href="#">Contraseña olvidada?</a>
+                    </div>
+                </div>
+              </ul>
+            </div>
+        </div>
+      </nav>
+      <header class="ficha">
+        <div class="container w-75">
+          <div class= "mt-3 mb-3 text-center">
+            <h2>Nombre Apellido</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="container p-4">
+                <div class="mt-3 mb-3">
+                <h4>Servicios:</h4>
+                <ul>
+                  <li class="p-1"><img src="../images/006-correa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Paseo</li>
+                  <li class="p-1"><img src="../images/009-casa.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Guarderia</li>
+                  <li class="p-1"><img src="../images/005-premio.svg" alt="" width="35rem" height="35rem" class="sm-icons"> Educador</li>
+                </ul>
+                </div>
+                <div class="mt-3 mb-3">
+                  <h4>Donde:</h4>
+                  <img src="../images/marcador-de-posicion.svg" alt="" height="35rem" width="35rem">Barcelona. 08013
+                </div>
+                <div class="mt-3 mb-5">
+                  <h4>Contactame:</h4>
+                  <img src="../images/llamada.svg" alt="" height="35rem" width="35rem">  982359850
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <div class="container">
+                <div class="box">
+                  <div class="avatar d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="foto rounded-circle img-fluid" height="200rem" width="200rem">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+      <!-- descripcion -->
+      <section>
+        <div class="container w-50">
+          <div class= "mt-3 mb-3 text-center">
+            <h4>Sobre mi:</h4>
+          </div>
+          <div class="mb-5 p-3">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda vitae consequatur molestiae aut tempore minima odit reprehenderit soluta quia praesentium totam dolorum explicabo dolor, ipsam dolores inventore rerum consectetur nobis.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Map -->
+      <section>
+        <div class="container mb-4">
+          <div id="map-container" class="map container-fluid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11971.149382180258!2d2.169649572504732!3d41.40042436382415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2ddf5a146c5%3A0x1c00fae37a474db0!2s08013%20Barcelona!5e0!3m2!1ses!2ses!4v1591180142917!5m2!1ses!2ses" width="600" height="450" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-up container-fluid">
+          <div class="row">
+            <div class="col-md-12 py-2">
+              <div class="m-1 d-flex align-items-center justify-content-center">
+                <a class="icono" href="#">
+                  <img src="../images/facebook.svg" alt="" width="35rem" height="35rem">
+                </a>
+                <a class="icono" href="#">
+                  <img src="../images/gorjeo.svg" alt="" width="35rem" height="35rem">
+                </a>
+                <a class="icono" href="#">
+                  <img src="../images/linkedin.svg" alt="" width="35rem" height="35rem">
+                </a>
+                <a class="icono-u" href="#">
+                  <img src="../images/instagram.svg" alt="" width="35rem" height="35rem">
+                </a>
+              </div>
+            </div>
+          </div>
+        <div class="footer-down container-fluid">
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://paseagos.com/"> paseaGos.com</a><br>
+            Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+          </div>
+        </div>
+      </footer>
+    
+    
+        <!-- Optional JavaScript -->
+        <script src="main.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      </body>
+    </html>
