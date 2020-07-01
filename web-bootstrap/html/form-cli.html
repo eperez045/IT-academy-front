@@ -15,9 +15,9 @@
     <title>PaseaGos/Formulario</title>
   </head>
   <body>
-     <!-- NavBar -->
-     <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-3 mb-5 bg-white">
-      <div class="container">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm p-3 mb-5 bg-white">
+    <div class="container">
         <a class="logo navbar-brand" href="../index.html">
           <img src="../images/two-dog-pawprints.svg" width="50" height="50" alt="" loading="lazy" >PaseaGos
         </a>
@@ -64,8 +64,8 @@
               </div>
             </ul>
           </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 <!-- Form -->
 <section>
 <div class="container d-flex align-items-center justify-content-center">
@@ -73,24 +73,27 @@
     <div class="card w-75 rounded">
       <div class="card-body">
         <h2 class="text-center p-3" style="font-family: 'Roboto', sans-serif;">¡Registrate!</h2>
-        <form>
+        <form method="POST" action="registrado.html" id="myForm" onsubmit="return registerValidate()" name="myForm"></form>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail">Email</label>
+              <label for="inputEmail">Email*</label>
               <input type="email" class="form-control" id="inputEmail">
+              <div class="invalid-feedback" id="errorEmail"></div>
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword">Password</label>
+              <label for="inputPassword">Password*</label>
               <input type="password" class="form-control" id="inputPassword">
               <small id="passwordHelpInline" class="text-muted">
                 Debe tener mas de 6 caracteres.
               </small>
+              <div class="invalid-feedback" id="errorPassword"></div>
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputName">Nombre</label>
+              <label for="inputName">Nombre*</label>
               <input type="text" class="form-control" id="inputName">
+              <div class="invalid-feedback" id="errorName"></div>
             </div>
             <div class="form-group col-md-6">
               <label for="inputSurname">Apellidos</label>
@@ -113,15 +116,20 @@
               <input type="text" class="form-control" id="inputCity">
             </div>
             <div class="form-group col-md-4">
-              <label for="inputState">Provincia</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
+              <label for="inputProvince">Provincia*</label>
+              <select id="inputProvince" class="form-control">
+                <option selected value=""></option>
+                  <option>Barcelona</option>
+                  <option>Girona</option>
+                  <option>Tarragona</option>
+                  <option>Lleida</option>
               </select>
+            <div class="invalid-feedback" id="errorProvince"></div>
             </div>
             <div class="form-group col-md-2">
-              <label for="inputZip">Codigo Postal</label>
+              <label for="inputZip">Codigo Postal*</label>
               <input type="text" class="form-control" id="inputZip">
+              <div class="invalid-feedback" id="errorZip"></div>
             </div>
           </div>
           <div class="form-group">
@@ -132,6 +140,14 @@
             <label for="inputFotoPerfil">Sube una foto para tu perfil</label>
             <input type="file" class="form-control-file" id="inputFotoPerfil">
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+            He leido y acepto la politica de privacidad*
+            </label>
+            <div class="invalid-feedback" id="errorCheck"></div>
+          </div>
+      </div>
           <div class="form-group text-center">
             <button type="submit" class="btn btn-light">Enviar</button>
           </div>
@@ -171,6 +187,7 @@
 </footer>
 
     <!-- Optional JavaScript -->
+    <script src="../js/form.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
