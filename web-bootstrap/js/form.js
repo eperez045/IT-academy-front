@@ -33,76 +33,77 @@ check.addEventListener('change', checkVerify, false);
 
 // validacion funcion
 function registerValidate(){
+    let acumerror = 0;
     // validate email
     if (email.value == ""){
         inputEmail.classList.add("is-invalid");
         document.getElementById("errorEmail").textContent = "Es campo es obligatorio";
-        email.focus();
-        return false;
+        acumerror++;
     }else if(!validar_email(inputEmail.value)){
 		inputEmail.classList.add("is-invalid");
         document.getElementById("errorEmail").textContent = "El email no cumple el formato";
-        email.focus();
-        return false;
+        acumerror++;
     }
     // validate password
     if(pas.value == ""){
         inputPassword.classList.add("is-invalid");
         document.getElementById("errorPassword").textContent = "Es campo es obligatorio";
-        pas.focus();
-        return false;
+        acumerror++;
     }else if(pas.value.length<6){
         inputPassword.classList.add("is-invalid");
         document.getElementById("errorPassword").textContent = "Debe contener mas 6 o mas caracteres";
-        pas.focus();
-        return false;
+        acumerror++;
     }
     // validate password repeat
     if(pasOk.value != pas.value){
         inputPasswordOk.classList.add("is-invalid");
         document.getElementById("errorPasswordOk").textContent = "La contraseña debe coincidir";
-        pasOk.focus();
-        return false;
+        acumerror++;
     }
     // validate name
     if(namee.value == ""){
         inputName.classList.add("is-invalid");
         document.getElementById("errorName").textContent = "Es campo es obligatorio";
-        return false;
+        acumerror++;
     }
     // validate telefono
     let telefono = /^(\+34|0034|34)?[6|7|8|9][0-9]{8}$/;
     if(tlf.value == ""){
         inputTlf.classList.add("is-invalid");
         document.getElementById("errorTlf").textContent = "Es campo es obligatorio";
-        return false;
+        acumerror++;
     }else if(!(telefono.test(tlf.value))){
         inputTlf.classList.add("is-invalid");
         document.getElementById("errorTlf").textContent = "El numero de telefono es incorrecto";
-        return false;
+        acumerror++;
     }
     // validate province
     if(pro.value == ""){
         inputProvince.classList.add("is-invalid");
         document.getElementById("errorProvince").textContent = "Es campo es obligatorio";
-        return false;
+        acumerror++;
     }
     // validate zip
     if(zip.value == ""){
         inputZip.classList.add("is-invalid");
         document.getElementById("errorZip").textContent = "El campo es obligatorio";
-        return false;
+        acumerror++;
     }
     else if(!validar_zip(inputZip.value)){
         inputZip.classList.add("is-invalid");
         document.getElementById("errorZip").textContent = "El codigo postal no es correcto";
-        return false;
+        acumerror++;
     }
     // Validate terminos y condiciones
     if(!gridCheck.checked) {
 		gridCheck.classList.add("is-invalid");
 		document.getElementById("errorCheck").textContent = "Acepta las bases";
-		return false;
+		acumerror++;
+    }
+    if(acumerror == 0){
+        return true;
+    }else{
+        return false;
     }
 
 }

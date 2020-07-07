@@ -7,20 +7,27 @@ var errorPasswordR = document.getElementById('errorPasswordR');
 emailR.addEventListener('change', emailRVerify, false);
 pasR.addEventListener('change', pasRVerify, false);
 
+
 function loginValidate(){
+    let acumerror= 0;
     if (emailR.value == ""){
         inputEmailR.classList.add("is-invalid");
         document.getElementById("errorEmailR").textContent = "Es campo es obligatorio";
-        return false;
+        acumerror++;
     }else if(!validar_email(inputEmailR.value)){
 		inputEmailR.classList.add("is-invalid");
 		document.getElementById("errorEmailR").textContent = "El email no cumple el formato";
-        return false;
+        acumerror++;
     }
     // validate password
     if(pasR.value == ""){
         inputPasswordR.classList.add("is-invalid");
         document.getElementById("errorPasswordR").textContent = "Es campo es obligatorio";
+        acumerror++;
+    }
+    if(acumerror == 0){
+        return true;
+    }else{
         return false;
     }
 }
